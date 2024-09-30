@@ -3,7 +3,7 @@
 This project contains two Python programs that help you work with `.avi` and `.mp4` video files. The first program converts multiple `.avi` files into one `.mp4` video, while the second detects movement in a video and saves the movement segments as separate clips.
 
 ### `converter.py`
-This script takes multiple `.avi` files from the folder `avivideos` (or a folder path you specify in the script), concatenates them, and outputs a single `.mp4` in the root directory.
+This script takes multiple .avi files from a specified folder (or its subfolders), sorts them by creation date, concatenates them, and outputs a single .mp4 file in the specified location. You can specify any folder path when running the program, and it supports full paths starting from ~ (the user's home directory).
 
 ### `extractmovement.py`
 This script takes the `output.mp4` file from the root directory, detects movement, and saves each detected movement segment as a separate `.mp4` file in the `movement_clips` folder.
